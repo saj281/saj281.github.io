@@ -79,12 +79,12 @@
 1.</span> Numbered
 <span class="p">2.</span> List
 
-<button id="mybutton" type="button" onclick="myFunction()"> Redirect to Google</button>
+<button id="mybutton" type="button"> Redirect to Google</button>
 
 <script type=”text/javascript”> 
-    function myFunction() {
-    location.href = "https://www.google.com/";
-    }
+   document.getElementById("mybutton").onclick = function () {
+        location.href = "https://www.google.com/";
+    };
     
 </script>
 
