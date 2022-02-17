@@ -79,12 +79,23 @@
 1.</span> Numbered
 <span class="p">2.</span> List
 
-<button id="myButton" class="float-left submit-button" >Redirect</button>
+<button id="myButton" class="float-left submit-button" >Sign Up Event</button>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
-        location.href = "https://www.google.com";
-    };
+        
+        
+       
+ire('trackConversion', 29263, {
+    orderId: “111111111111”,
+	customerId: “22222”,
+	customerEmail: "",
+	},
+    {
+        verifySiteDefinitionMatch:true
+    }
+   );
+
 </script>
 
 <span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
